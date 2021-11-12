@@ -1,23 +1,23 @@
 package com.shapes.test;
 
-import com.shapes.AreaPerimeter;
+import com.shapes.GeometricalShapes;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AreaPerimeterTest {
+class GeometricalShapesTest {
 
    @Test
    void areaOfRectangle() {
 
-      AreaPerimeter rectangle = new AreaPerimeter(3,6);
+      GeometricalShapes rectangle = new GeometricalShapes(3,6);
 
       assertEquals(18, rectangle.areaOfRectangle());
    }
 
    @Test
    void perimeterOfRectangle() {
-      AreaPerimeter rectangle = new AreaPerimeter(5,5);
+      GeometricalShapes rectangle = new GeometricalShapes(5,5);
 
       assertEquals(20, rectangle.perimeterOfRectangle());
    }
@@ -25,7 +25,7 @@ class AreaPerimeterTest {
    @Test
    void areaOfSquare() {
 
-      AreaPerimeter square = new AreaPerimeter(3);
+      GeometricalShapes square = new GeometricalShapes(3);
 
       assertEquals(9, square.areaOfSquare());
    }
@@ -33,9 +33,8 @@ class AreaPerimeterTest {
    @Test
    void perimeterOfSquare() {
 
-      AreaPerimeter square = new AreaPerimeter(3);
+      GeometricalShapes square = new GeometricalShapes(3);
 
       assertEquals(12, square.perimeterOfSquare());
    }
-
 }
