@@ -10,28 +10,30 @@ class RectangleAreaPerimeterTest {
    void areaWhenInputsAreIntegers() {
       RectangleAreaPerimeter rectangle = new RectangleAreaPerimeter();
 
-      assertEquals(18, rectangle.findArea(3,6));
+      assertEquals(18, rectangle.area(3,6));
    }
 
    @Test
    void areaWhenInputsAreDoubles() {
       RectangleAreaPerimeter rectangle = new RectangleAreaPerimeter();
 
-      assertEquals(22.75, rectangle.findArea(3.5,6.5));
+      assertEquals(22.75, rectangle.area(3.5,6.5));
    }
 
    @Test
    void areaWhenInputsAreIntegerAndDouble() {
       RectangleAreaPerimeter rectangle = new RectangleAreaPerimeter();
 
-      assertEquals(19.5, rectangle.findArea(3,6.5));
+      assertEquals(19.5, rectangle.area(3,6.5));
    }
 
    @Test
    void areaWhenInputsAreDoubleAndInteger() {
       RectangleAreaPerimeter rectangle = new RectangleAreaPerimeter();
 
-      assertEquals(24.5, rectangle.findArea(3.5,7));
+      assertEquals(24.5, rectangle.area(3.5,7));
    }
+
+
 
 }
