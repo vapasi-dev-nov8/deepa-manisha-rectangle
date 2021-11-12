@@ -1,12 +1,19 @@
 package com.shapes;
 
 public class RectangleAreaPerimeter {
+    double length;
+    double breadth;
 
-    public int findArea(int length, int breadth) {
+    public RectangleAreaPerimeter(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public double area() {
         return length * breadth;
     }
 
-    public double findArea(double length, double breadth) {
-        return length * breadth;
+    public double perimeter() {
+        return 2 * (length + breadth);
     }
 }
