@@ -16,18 +16,49 @@ public class GeometricalShapes {
     }
 
     public double areaOfRectangle() {
+
+        if(isNegativeOrZero(length)) {
+            return length;
+        }
+
+        if(isNegativeOrZero(breadth)) {
+            return breadth;
+        }
         return length * breadth;
     }
 
     public double perimeterOfRectangle() {
+
+        if(isNegativeOrZero(length)) {
+            return length;
+        }
+
+        if(isNegativeOrZero(breadth)) {
+            return breadth;
+        }
         return 2 * (length + breadth);
     }
 
     public double areaOfSquare() {
+
+        if(isNegativeOrZero(length)) {
+            return length;
+        }
         return length * length;
     }
 
     public double perimeterOfSquare() {
+
+        if(isNegativeOrZero(length)) {
+            return length;
+        }
         return length * 4;
+    }
+
+    private boolean isNegativeOrZero(double value) {
+        if(value <=0 ) {
+            return true;
+        }
+        return false;
     }
 }
