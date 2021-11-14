@@ -1,5 +1,11 @@
-.gradle
-.idea
-build
-gradle/wrapper
+#Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
 .DS_Store
